@@ -221,7 +221,7 @@ fieldset > div > input, fieldset > input {
 
 /* scroll snap effect */
 html, body, section {
-  block-size: 100%;
+  min-height: 100vh;
 }
 
 html {
@@ -450,7 +450,7 @@ About Section style
   }
 }
 
-/**Footer*/
+/*Footer*/
 footer {
   position: fixed;
   font-family: var(--main-font);
