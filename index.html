@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+      content="Love Letter Generator helps you to quickly create a love letter for your loved one. You can choose your theme and personalize it with your own words. Have fun creating a love letter to treasure.">
+  <meta name="keywords" content="letter generator, love letter generator, love, Valentine, anniversary, celebration, quickly write a love letter, funny love letter, romantic, platonic, monogamous, polyamoric">
+  <title>Cupid's Quill</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!--Styles-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+  <section id="welcome-section" class="row welcome">
+    <video class="video-container" muted autoplay loop>
+      <source src="./assets/images/heart-bg.mp4" type="video/mp4">
+    </video>
+    <h1 class="text-center">💕Love Letter Generator💕</h1>
+    <a href="#main" id="welcome-btn" class="scroll-link btn mb-5 text-center">Explore</a>
+  </section>
+  <section id="main" class="main">
+  <header>
+  <!--Navbar-->
+    <nav class="navbar navbar-expand-md p-0">
+      <div class="container-fluid p-0">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" aria-label="Home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-label="New Letter" href="#loveLetterForm">New Letter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-label="About" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-label="Contact Us" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <!--Main-->
+    <div class="container d-flex flex-column align-items-center justify-content-center pb-3 h-80 mt-5">
+      <div class="card p-5">
+        <h2>Love Letter Generator</h2>
+        <form id="loveLetterForm">
+          <fieldset id="type"
+          class="input-container pt-3">
+            <label for="letter-type" class="type-label letter-section">Letter Type</label>
+            <select name="letter-type" id="letter-type" class="p-1 select-input">
+              <option value="Platonic">Platonic</option>
+              <option value="Romantic">Romantic</option>
+              <option value="Monogamous">Monogamous</option>
+              <option value="Polyamorous">Polyamorous</option>
+            </select>
+          </fieldset>
+          <fieldset id="main-form" class="input-container pt-3">
+            <div>
+              <label for="partnerName">Partner's Name:</label>
+              <input type="text" name="partnerName" id="partnerName" pattern="^[a-zA-Z]+$" title="Please enter letters only" placeholder="Partner's Name" required>
+            </div>
+            <div>
+              <label for="noun1">Noun 1:</label>
+              <input type="text" name="noun1" id="noun1" pattern="^[a-zA-Z]+$" title="Please enter letters only" placeholder="Noun One" required>
+              <button type="button" id="randomizeNoun1" class="dice-btn"><i class="fa fa-dice"></i></button>
+            </div>
+            <div>
+              <label for="noun2">Noun 2:</label>
+              <input type="text" name="noun2" id="noun2" pattern="^[a-zA-Z]+$" title="Please enter letters only" placeholder="Noun Two" required>
+              <button type="button" id="randomizeNoun2" class="dice-btn"><i class="fa fa-dice"></i></button>
+            </div>
+            <div>
+              <label for="eyeColor">Eye Colour:</label>
+              <input type="text" name="eyeColor" id="eyeColor" pattern="^[a-zA-Z]+$" title="Please enter letters only" placeholder="Eye color" required>
+            </div>
+            <div>
+              <label for="adjective1">Adjective 1:</label>
+              <input type="text" name="adjective1" id="adjective1" pattern="^[a-zA-Z]+$" title="Please enter letters only" placeholder="Adjective One" required>
+              <button type="button" id="randomizeAdjective1" class="dice-btn"><i class="fa fa-dice"></i></button>
+            </div>
+            <div>
+              <label for="adjective2">Adjective 2:</label>
+              <input type="text" name="adjective2" id="adjective2" pattern="^[a-zA-Z]+$" title="Please enter letters only" placeholder="Adjective Two" required>
+              <button type="button" id="randomizeAdjective2" class="dice-btn"><i class="fa fa-dice"></i></button>
+            </div>
+            <div>
+              <label for="yourName">Your Name:</label>
+              <input type="text" name="yourName" id="yourName" pattern="^[a-zA-Z]+$" title="Please enter letters only" placeholder="Your name" required>
+              <br>
+              <input class="btn mt-3" id="generate-btn" type="submit" value="Generate">
+              <input class="btn mt-3" id="clear-btn" type="submit" value="Clear">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <!--footer -->
+    <footer class="footer d-none d-sm-flex">
+      <ul class="nav justify-content-end ">
+        <li class="nav-item ">
+          <a href="https://github.com/emilyrosenberg" target="_blank"
+            ><i class="fa-brands fa-github"></i> Emily</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/JohnnySonTrinh" target="_blank"
+            ><i class="fa-brands fa-github"></i> Johnny</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/caleom" target="_blank"
+            ><i class="fa-brands fa-github"></i> Liam</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/lucia2007" target="_blank"
+            ><i class="fa-brands fa-github"></i> Lucia</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/Cleg83" target="_blank"
+            ><i class="fa-brands fa-github"></i> Matthew</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/msamarpanraj" target="_blank"
+            ><i class="fa-brands fa-github"></i> Samarpan</a>
+        </li>
+      </ul>
+    </footer>
+  </section>
+   <!-- Letter Section -->
+  <section id="letter-section" class="bg-rose-100">
+    <div class="card mt-5 p-5">
+      <div class="d-flex mb-5">
+      <button type="submit" class="platonic letter-type-button" id="Platonic">Platonic</button>
+      <button type="submit" class="romantic letter-type-button" id="Romantic">Romantic</button>
+      <button type="submit" class="polyamorous letter-type-button" id="Polyamorous">Polyamorous</button>
+      <button type="submit" class="polygamous letter-type-button" id="Monogamous">Monogamous</button>
+      </div>
+      <h2>Your Letter...</h2>
+        <div id="letterOutput" >
+        </div>
+      </div>
+  </section>
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/668de150a5.js" crossorigin="anonymous"></script>
+    <!--Scripts-->
+    <script src="assets/scripts/generator/letter.js"></script>
+    <script src="assets/scripts/scipt.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
