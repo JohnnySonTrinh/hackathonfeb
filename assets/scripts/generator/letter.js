@@ -230,3 +230,29 @@ function capitalize(str) {
   // Capitalize the first letter and concatenate the rest of the string
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+//Dowload letter section
+const download = document.getElementById("download")
+const background = document.getElementById("pdfBg")
+
+download.addEventListener("click", newPdf)
+
+
+function newPdf(){
+
+    let maxWidth = 6.25
+
+    let letter = document.getElementById("letterOutput").innerText
+    const doc = new jsPDF({
+      orientation: "p",
+      unit:"in",
+      format:"a4"
+    });
+
+    doc.addImage(background,"JPEG", 0, 0, 8.25, 11.75)
+
+    let letterSplit = doc.splitTextToSize(letter, maxWidth)
+    
+   doc.text(letterSplit, 1, 1.5);
+   doc.save("love-letter.pdf");
+}
