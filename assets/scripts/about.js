@@ -14,27 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
         leftButton.style.display = 'inline-block';
         rightButton.style.display = 'inline-block';
         swipeGroup.style.display = 'inline-block';
-        
+
         // Hide the card group
         cardTeam.style.display = 'none';
-        
+
         // Change the background image of the profilePicture card
-        profilePictureCard.style.backgroundImage = "url('assets/images/picturePicture1.png')";
+        profilePictureCard.style.backgroundImage = "url('assets/images/profilePicture1.png')";
         loveLetterCard.style.backgroundImage = "url('assets/images/loveLetter1.png')";
         loveStuffCard.style.backgroundImage = "url('assets/images/loveStuff1.png')";
         aboutCard.style.backgroundImage = "url('assets/images/aboutCard1.png')";
-        
+
         // Optionally, hide the start-swipe button after clicking
         startSwipeButton.style.display = 'none';
     });
 });
 
-
-profilePictures = ['picturePicture1.png', 'picturePicture2.png', 'picturePicture3.png', 'picturePicture4.png', 'picturePicture5.png', 'picturePicture6.png'];
+profilePictures = ['profilePicture1.png', 'profilePicture2.png', 'profilePicture3.png', 'profilePicture4.png', 'profilePicture5.png', 'profilePicture6.png'];
 loveLetters = ['loveLetter1.png', 'loveLetter2.png', 'loveLetter3.png', 'loveLetter4.png', 'loveLetter5.png', 'loveLetter6.png'];
 loveStuffs = ['loveStuff1.png', 'loveStuff2.png', 'loveStuff3.png', 'loveStuff4.png', 'loveStuff5.png', 'loveStuff6.png'];
 aboutCards = ['aboutCard1.png', 'aboutCard2.png', 'aboutCard3.png', 'aboutCard4.png', 'aboutCard5.png', 'aboutCard6.png'];
-
 
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0; // Starting index for the images
