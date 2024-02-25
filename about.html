@@ -18,19 +18,19 @@
     <!--Navbar-->
       <nav class="navbar navbar-expand-md p-0">
         <div class="container-fluid p-0">
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler border-0 bg-white m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-label="Home" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-label="New Letter" href="index.html#loveLetterForm">New Letter</a>
+              </li>
               <li class="nav-item active">
-                <a class="nav-link active" aria-current="page" aria-label="Home" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-label="New Letter" href="#loveLetterForm">New Letter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-label="About" href="about.html">About</a>
+                <a class="nav-link active" aria-current="page" aria-label="About" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-label="Contact Us" href="contact.html">Contact Us</a>
@@ -49,6 +49,7 @@
           <div class="big-card cards"></div>
           <div class="big-card cards"></div>
           <div class="big-card cards"></div>
+          <div class="big-card cards"></div>
         </div>
         <div class="swipe-group">
           <div class="big-card cards" data-image="aboutCard"></div>
@@ -60,13 +61,13 @@
         </div>
       </div>
       <div class="card-swiper-buttons mb-5">
-        <button id="start-swipe">
+        <button type="submit" id="start-swipe">
             <i class="fa-solid fa-heart"></i>
         </button>
-        <button id="left-button">
+        <button type="submit" id="left-button">
         <i class="fa-solid fa-arrow-left"></i>
         </button>
-        <button id="right-button">
+        <button type="submit" id="right-button">
         <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
