@@ -1,9 +1,9 @@
 function sendMail() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-  var errorMessage = document.getElementById("errorMessage");
-  var successMessage = document.getElementById("successMessage");
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const errorMessage = document.getElementById("errorMessage");
+  const successMessage = document.getElementById("successMessage");
 
   if (name === "" || email === "" || message === "") {
     errorMessage.innerText = "All fields are required!";
@@ -11,7 +11,7 @@ function sendMail() {
     return; // Prevent further execution
   }
 
-  var params = {
+  const params = {
     name: name,
     email: email,
     message: message,
